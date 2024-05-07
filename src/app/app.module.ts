@@ -15,6 +15,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { HomeComponent } from './home/home.component';
 import {MatCard, MatCardModule} from '@angular/material/card';
+import { SalariesComponent } from './Accounts/salaries/salaries.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import {MatCard, MatCardModule} from '@angular/material/card';
     SIdeBarComponent,
     HeaderComponent,
     HomeComponent,
+    SalariesComponent,
   ],
   imports: [
     BrowserModule,
