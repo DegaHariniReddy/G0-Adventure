@@ -7,8 +7,8 @@ import { OfficeExpensesComponent } from './Accounts/office-expenses/office-expen
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'Home',component:HomeComponent},
-  {path:'office expenses',component:OfficeExpensesComponent}
-  // {path:'salaries',component:SalariesComponent}
+  {path:'office expenses',component:OfficeExpensesComponent},
+  
 ];
 
 @NgModule({
