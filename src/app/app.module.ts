@@ -23,6 +23,7 @@ import { MaterialDesignModule } from './material-design/material-design.module';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { AdvertisementBillsComponent } from './Accounts/advertisement-bills/advertisement-bills.component';
+import { TripBillsComponent } from './trip-bills/trip-bills.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { AdvertisementBillsComponent } from './Accounts/advertisement-bills/adve
     OfficeExpensesComponent,
     TripProfitnLosssComponent,
     AdvertisementBillsComponent,
+    TripBillsComponent,
   ],
   imports: [
     BrowserModule,
