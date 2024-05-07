@@ -20,7 +20,6 @@ import { OfficeExpensesComponent } from './Accounts/office-expenses/office-expen
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatSelectModule} from '@angular/material/select';
-
 import { TripProfitnLosssComponent } from './Accounts/trip-profitn-losss/trip-profitn-losss.component';
 import { MaterialDesignModule } from './material-design/material-design.module';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -48,20 +47,15 @@ import { AdvertisementBillsComponent } from './Accounts/advertisement-bills/adve
     MatSidenavModule,
     MatListModule,
     MatDividerModule,
-
-    
     MatExpansionModule,
     MatCardModule,
     MaterialDesignModule,
     MatFormFieldModule,
     MatInputModule,
-<<<<<<< HEAD
     MatDatepickerModule,
     MatNativeDateModule,
     MatSelectModule
 
-=======
->>>>>>> 7cddb95e1b1fc2d16c1119c1e79b81b8b0ed1850
 
   ],
   providers: [],

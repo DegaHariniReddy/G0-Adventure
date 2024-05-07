@@ -10,10 +10,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'Home', component: HomeComponent },
   { path: 'tripPL', component: TripProfitnLosssComponent },
-
   { path: 'salaries', component: SalariesComponent },
-
-
   { path: 'office expenses', component: OfficeExpensesComponent },
 
 ];

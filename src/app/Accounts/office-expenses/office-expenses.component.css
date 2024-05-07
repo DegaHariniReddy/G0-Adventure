@@ -14,3 +14,34 @@
   ::ng-deep .mat-mdc-text-field-wrapper {
     top: -1.5em !important;
   }
+  .form{
+    background-color: rgb(195, 243, 227);
+    height: 530px;
+  }
+  .heading{
+    background-color:plum;
+  }
+  #delete{
+    background-color: indigo;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+#Apply{
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+#reset{
+    background-color: rgb(238, 8, 142);
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+#Clear{
+        background-color: red;
+        color: white;
+        margin-bottom: 10px;
+        margin-left: 30px;
+}
+
+ 
