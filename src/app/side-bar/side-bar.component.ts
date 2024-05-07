@@ -9,12 +9,12 @@ import {MatExpansionModule} from '@angular/material/expansion';
 
 })
 export class SIdeBarComponent {
-  isOpen: boolean = false;
-sidenav: any;
-  toggleMenu(): void {
-    this.isOpen = !this.isOpen;
-  }
+//   isOpen: boolean = false;
+// sidenav: any;
+//   toggleMenu(): void {
+//     this.isOpen = !this.isOpen;
+//   }
 
-// panelOpenState = false;
+panelOpenState = false;
 
 }
