@@ -10,13 +10,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { HomeComponent } from './home/home.component';
-import {MatCard, MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { SalariesComponent } from './Accounts/salaries/salaries.component';
 import { OfficeExpensesComponent } from './Accounts/office-expenses/office-expenses.component';
+import { TripProfitnLosssComponent } from './Accounts/trip-profitn-losss/trip-profitn-losss.component';
+import { MaterialDesignModule } from './material-design/material-design.module';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { OfficeExpensesComponent } from './Accounts/office-expenses/office-expen
     HomeComponent,
     SalariesComponent,
     OfficeExpensesComponent,
+    TripProfitnLosssComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,9 +41,10 @@ import { OfficeExpensesComponent } from './Accounts/office-expenses/office-expen
     MatListModule,
     MatDividerModule,
     MatExpansionModule,
-    MatCardModule
+    MatCardModule,
+    MaterialDesignModule
 
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
