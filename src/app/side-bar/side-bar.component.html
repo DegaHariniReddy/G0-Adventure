@@ -1,66 +1,68 @@
 <mat-toolbar class="mat-elevation-z8">
   <button mat-icon-button (click)="sidenav.toggle()">
-  
-    <mat-icon > menu </mat-icon>
+
+    <mat-icon> menu </mat-icon>
   </button>
   <h1>Go Adventure</h1>
 </mat-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav mode="side" open="true" #sidenav="matSidenav" class="mat-elevation-z8"> 
-    <img
-    class="avatar mat-elevation-z8"
-    src="assets/GOAdvt.jpg"
-  />     
+  <mat-sidenav mode="side" open="true" #sidenav="matSidenav" class="mat-elevation-z8">
+    <img class="avatar mat-elevation-z8" src="assets/GOAdvt.jpg" />
     <h2 class="name">GA</h2>
     <!-- <p class="designation"> Degree(B.Com)</p> -->
-    <button  mat-button class="home-button" routerLinkActive="active">
+    <button mat-button class="home-button" routerLinkActive="active">
       <!-- <mat-icon>home</mat-icon> -->
       <mat-icon style="margin-left: 20px;">home</mat-icon>
 
-      <span><a  routerLink="home">Home</a></span>
+      <span><a routerLink="home">Home</a></span>
     </button>
 
     <!-- <mat-divider></mat-divider>  -->
-    <mat-accordion> 
-      <mat-expansion-panel style="margin-top: 10px;" > 
-          <mat-expansion-panel-header> 
-          <mat-panel-title  class="Admin"> 
-              <mat-icon style="margin-right: 10px;" class="mat-icon">account_balance</mat-icon>
-              Accounts
-          </mat-panel-title> 
-          </mat-expansion-panel-header> 
-          <button  mat-button class="menu-button">
-            <span><a routerLinkactive="active" routerLink="salaries">Salaries</a></span>
+    <mat-accordion>
+      <mat-expansion-panel style="margin-top: 10px;">
+        <mat-expansion-panel-header>
+          <mat-panel-title class="Admin">
+            <mat-icon style="margin-right: 10px;" class="mat-icon">account_balance</mat-icon>
+            Accounts
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <button mat-button class="menu-button">
+          <span><a routerLinkactive="active" routerLink="salaries">Salaries</a></span>
+        </button>
+
+        <div style="margin-top: 10px;">
+          <button style="color:crimson;" mat-button class="menu-button" routerLinkactive="active">
+            <span><a routerLink="officeexpenses" style="color:crimson">Office Expenses</a> </span>
+          </button>
+        </div>
+        <div style="margin-top: 10px;">
+          <button style="color:crimson;" mat-button class="menu-button" matListItemTitle routerLinkactive="active">
+            <span><a routerLink="tripPL" style="color:crimson">Trip Profit&Loss</a> </span>
+          </button>
+        </div>
+        <div style="margin-top: 10px;">
+          <button style="color:crimson ;" mat-button class="menu-button" routerLinkactive="active">
+            <span><a routerLink="Products" style="color: crimson;">Products</a></span>
+
           </button>
 
-          <div style="margin-top: 10px;" >
-            <button style="color:crimson;" mat-button class="menu-button" routerLinkactive="active">
-              <span><a routerLink="office expenses" style="color:crimson">Office Expenses</a> </span>
-            </button>
-      </div>
-     <div style="margin-top: 10px;">
-      <button style="color:crimson ;" mat-button class="menu-button" routerLinkactive="active">
-        <span><a routerLink="Products" style="color: crimson;">Products</a></span>
+        </div>
 
-      </button>
 
-     </div>
 
-    
 
-          
-      
-      </mat-expansion-panel> 
-      
-      </mat-accordion> 
-    
-    
 
-     <mat-divider></mat-divider> 
+      </mat-expansion-panel>
 
-  
-  </mat-sidenav> 
+    </mat-accordion>
+
+
+
+    <mat-divider></mat-divider>
+
+
+  </mat-sidenav>
   <mat-sidenav-content>
     <div class="content mat-elevation-z8">
       <router-outlet></router-outlet>
