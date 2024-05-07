@@ -17,8 +17,12 @@ import { HomeComponent } from './home/home.component';
 import { MatCardModule } from '@angular/material/card';
 import { SalariesComponent } from './Accounts/salaries/salaries.component';
 import { OfficeExpensesComponent } from './Accounts/office-expenses/office-expenses.component';
+
 import { TripProfitnLosssComponent } from './Accounts/trip-profitn-losss/trip-profitn-losss.component';
 import { MaterialDesignModule } from './material-design/material-design.module';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { AdvertisementBillsComponent } from './Accounts/advertisement-bills/advertisement-bills.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +33,7 @@ import { MaterialDesignModule } from './material-design/material-design.module';
     SalariesComponent,
     OfficeExpensesComponent,
     TripProfitnLosssComponent,
+    AdvertisementBillsComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,8 +47,12 @@ import { MaterialDesignModule } from './material-design/material-design.module';
     MatDividerModule,
     MatExpansionModule,
     MatCardModule,
-    MaterialDesignModule
 
+    MaterialDesignModule,
+
+
+    MatFormFieldModule,
+    MatInputModule
 
   ],
   providers: [],
