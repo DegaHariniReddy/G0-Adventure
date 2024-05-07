@@ -25,9 +25,6 @@ import { MaterialDesignModule } from './material-design/material-design.module';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { AdvertisementBillsComponent } from './Accounts/advertisement-bills/advertisement-bills.component';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatNativeDateModule} from '@angular/material/core';
-import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -50,8 +47,6 @@ import {MatSelectModule} from '@angular/material/select';
     MatSidenavModule,
     MatListModule,
     MatDividerModule,
-<<<<<<< HEAD
-=======
 
     MatExpansionModule,
     MatCardModule,
@@ -62,26 +57,7 @@ import {MatSelectModule} from '@angular/material/select';
     MatSelectModule,
 
 
->>>>>>> 19af014cf304f03ae6511d6a102a45c8d02d4d72
-    MatExpansionModule,
-    MatCardModule,
-    MaterialDesignModule,
-    MatFormFieldModule,
-    MatInputModule,
-<<<<<<< HEAD
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatSelectModule
-
-
   ],
-=======
-
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatSelectModule
-],
->>>>>>> 19af014cf304f03ae6511d6a102a45c8d02d4d72
   providers: [],
   bootstrap: [AppComponent]
 })
