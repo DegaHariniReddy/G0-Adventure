@@ -10,15 +10,21 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { HomeComponent } from './home/home.component';
-import {MatCard, MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { SalariesComponent } from './Accounts/salaries/salaries.component';
 import { OfficeExpensesComponent } from './Accounts/office-expenses/office-expenses.component';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatSelectModule} from '@angular/material/select';
+
+import { TripProfitnLosssComponent } from './Accounts/trip-profitn-losss/trip-profitn-losss.component';
+import { MaterialDesignModule } from './material-design/material-design.module';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 import { AdvertisementBillsComponent } from './Accounts/advertisement-bills/advertisement-bills.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
@@ -32,6 +38,7 @@ import {MatSelectModule} from '@angular/material/select';
     HomeComponent,
     SalariesComponent,
     OfficeExpensesComponent,
+    TripProfitnLosssComponent,
     AdvertisementBillsComponent,
   ],
   imports: [
@@ -44,17 +51,26 @@ import {MatSelectModule} from '@angular/material/select';
     MatSidenavModule,
     MatListModule,
     MatDividerModule,
+
     MatExpansionModule,
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatSelectModule,
+
+
+    MatExpansionModule,
+    MatCardModule,
+    MaterialDesignModule,
+    MatFormFieldModule,
+    MatInputModule,
+
+    MatDatepickerModule,
+    MatNativeDateModule,
     MatSelectModule
-
-
-
-  ],
+],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<form>
+
+
+  <header>
+    <b>Trip Profit&Loss </b>
+
+  </header>
+  <div class="container fluid">
+    <div class="col" align="center">
+      <mat-form-field appearance="outline">
+        <mat-label>Trip Name</mat-label>
+        <input matInput type="text" placeholder="Trip Name">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Quated Amount</mat-label>
+        <input matInput type="number" placeholder="Quated Amount">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Trip Lead</mat-label>
+        <input matInput type="text" placeholder="Trip Lead">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Lead Charges</mat-label>
+        <input matInput type="number" placeholder="Lead Charges">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Stay Bill</mat-label>
+        <input matInput type="number" placeholder="Stay Bill">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Vechile Charges</mat-label>
+        <input matInput type="number" placeholder="Vechile Charges">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Other Expensives</mat-label>
+        <input matInput type="number" placeholder="Other Expensives">
+      </mat-form-field>
+
+    </div>
+  </div>
+  <div class="col" align="center">
+    <button mat-raised-button color="primary" type="submit"><mat-icon>save</mat-icon>Submit</button>
+    <button mat-raised-button color="warn" class="btnClear"><mat-icon>clear</mat-icon>Clear</button>
+  </div>
+</form>
+
+</html>
