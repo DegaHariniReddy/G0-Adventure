@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit  {
    'assets/Manali.jpg',
    'assets/kerala.jpg',
    'assets/Fire.jpg',
-   'D:\Angular\GoAdvt\src\assets\Ladakh.jpg',
+   'assets\Ladakh.jpg',
   //  'assets/Screenshot 2024-05-07 102435.png',
    'assets/Screenshot 2024-05-07 102413.png',
    'assets/Screenshot 2024-05-07 102333.png',

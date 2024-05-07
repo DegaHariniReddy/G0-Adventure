@@ -3,11 +3,11 @@
     width: 100px;
 } */
 .mat-card {
-    height: fit-content ;
-    width: fit-content ;
-  }
-  /* image{
-    height: 180px;
-    width: auto;
-  }
-   */
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.image {
+    height:10% !important;
+    width: 100% !important;
+}
