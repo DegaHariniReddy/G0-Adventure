@@ -14,14 +14,16 @@ import {MatListModule} from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { HomeComponent } from './home/home.component';
-import {MatCard, MatCardModule} from '@angular/material/card'
+import {MatCard, MatCardModule} from '@angular/material/card';
+import { SalariesComponent } from './salaries/salaries.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     SIdeBarComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    SalariesComponent
   ],
   imports: [
     BrowserModule,
