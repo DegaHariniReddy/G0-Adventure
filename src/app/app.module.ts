@@ -17,6 +17,8 @@ import { HomeComponent } from './home/home.component';
 import {MatCard, MatCardModule} from '@angular/material/card';
 import { SalariesComponent } from './Accounts/salaries/salaries.component';
 import { OfficeExpensesComponent } from './Accounts/office-expenses/office-expenses.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { OfficeExpensesComponent } from './Accounts/office-expenses/office-expen
     MatListModule,
     MatDividerModule,
     MatExpansionModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule
 
     
   ],
