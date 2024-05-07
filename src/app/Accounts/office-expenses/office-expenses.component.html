@@ -1,4 +1,34 @@
-<mat-form-field style="margin-left: 200px;">
-    <mat-label>Transaction Id</mat-label>
-    <input id="id" matInput placeholder="Transaction Id">
-</mat-form-field>
+<form align="center">
+    <div>
+        <h1>OFFICE EXPENSES</h1>
+    </div>
+    <div>
+        <mat-form-field appearance="outline" >
+            <mat-label>Transaction Id</mat-label>
+            <input id="id" matInput placeholder="Transaction Id">
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="margin-left: 50px;margin-top: 50px;">
+            <mat-label>Bill Id</mat-label>
+            <input id="bill" matInput placeholder="Bill Id">
+        </mat-form-field>
+        <mat-form-field appearance="outline" style="margin-left: 50px;margin-top: 50px;">
+            <mat-label>Transaction Date</mat-label >
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field style="margin-left: 200px;">
+            <mat-label>Expenses Type</mat-label>
+            <mat-select #mode value="select">
+              <mat-option value="Select">--Select--</mat-option>
+              <mat-option value="V00">Electric Bill</mat-option>
+              <mat-option value="V16">Wifi Bill</mat-option>
+            </mat-select>
+            </mat-form-field>
+    </div>
+</form>
+
+
+
