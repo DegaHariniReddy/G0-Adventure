@@ -11,8 +11,6 @@ const routes: Routes = [
 
   {path:'salaries',component:SalariesComponent},
 
-  {path:'office expenses',component:OfficeExpensesComponent},
-  // {path:'salaries',component:SalariesComponent}
 
   {path:'office expenses',component:OfficeExpensesComponent},
   
