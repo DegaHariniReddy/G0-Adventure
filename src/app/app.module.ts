@@ -19,6 +19,7 @@ import { SalariesComponent } from './Accounts/salaries/salaries.component';
 import { OfficeExpensesComponent } from './Accounts/office-expenses/office-expenses.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { AdvertisementBillsComponent } from './Accounts/advertisement-bills/advertisement-bills.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import {MatInputModule} from '@angular/material/input';
     HomeComponent,
     SalariesComponent,
     OfficeExpensesComponent,
+    AdvertisementBillsComponent,
   ],
   imports: [
     BrowserModule,
