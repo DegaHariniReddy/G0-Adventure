@@ -47,12 +47,9 @@ import { AdvertisementBillsComponent } from './Accounts/advertisement-bills/adve
     MatDividerModule,
     MatExpansionModule,
     MatCardModule,
-
     MaterialDesignModule,
-
-
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
 
   ],
   providers: [],
