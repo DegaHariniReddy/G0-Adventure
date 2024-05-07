@@ -1,0 +1,13 @@
+/* .img{
+    height: 300px;
+    width: 100px;
+} */
+.mat-card {
+    height: fit-content ;
+    width: fit-content ;
+  }
+  /* image{
+    height: 180px;
+    width: auto;
+  }
+   */

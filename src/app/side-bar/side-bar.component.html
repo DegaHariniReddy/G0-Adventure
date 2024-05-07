@@ -1,0 +1,70 @@
+<mat-toolbar class="mat-elevation-z8">
+  <button mat-icon-button (click)="sidenav.toggle()">
+  
+    <mat-icon > menu </mat-icon>
+  </button>
+  <h1>Go Adventure</h1>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav mode="side" open="true" #sidenav="matSidenav" class="mat-elevation-z8"> 
+    <img
+    class="avatar mat-elevation-z8"
+    src="assets/GOAdvt.jpg"
+  />     
+    <h2 class="name">GA</h2>
+    <!-- <p class="designation"> Degree(B.Com)</p> -->
+    <button  mat-button class="home-button" routerLinkActive="active">
+      <!-- <mat-icon>home</mat-icon> -->
+      <mat-icon style="margin-left: 20px;">home</mat-icon>
+
+      <span><a  routerLink="home">Home</a></span>
+    </button>
+
+    <!-- <mat-divider></mat-divider>  -->
+    <mat-accordion> 
+      <mat-expansion-panel style="margin-top: 10px;" > 
+          <mat-expansion-panel-header> 
+          <mat-panel-title  class="Admin"> 
+              <mat-icon style="margin-right: 10px;" class="mat-icon">person</mat-icon>
+              Admin
+          </mat-panel-title> 
+          </mat-expansion-panel-header> 
+          <button  mat-button class="menu-button">
+            <span><a routerLinkactive="active" routerLink="company">Company</a></span>
+          </button>
+
+          <div style="margin-top: 10px;" >
+            <button style="color:crimson;" mat-button class="menu-button" routerLinkactive="active">
+              <span><a routerLink="user" style="color:crimson">User</a> </span>
+            </button>
+      </div>
+     <div style="margin-top: 10px;">
+      <button style="color:crimson ;" mat-button class="menu-button" routerLinkactive="active">
+        <span><a routerLink="Products" style="color: crimson;">Products</a></span>
+
+      </button>
+
+     </div>
+
+    
+
+          
+      
+      </mat-expansion-panel> 
+      
+      </mat-accordion> 
+    
+    
+
+     <mat-divider></mat-divider> 
+
+  
+  </mat-sidenav> 
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z8">
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
