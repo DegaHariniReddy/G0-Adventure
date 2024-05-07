@@ -16,6 +16,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { HomeComponent } from './home/home.component';
 import {MatCard, MatCardModule} from '@angular/material/card';
 import { SalariesComponent } from './Accounts/salaries/salaries.component';
+import { OfficeExpensesComponent } from './Accounts/office-expenses/office-expenses.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SalariesComponent } from './Accounts/salaries/salaries.component';
     HeaderComponent,
     HomeComponent,
     SalariesComponent,
+    OfficeExpensesComponent,
   ],
   imports: [
     BrowserModule,
