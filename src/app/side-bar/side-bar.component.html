@@ -1,17 +1,17 @@
 <mat-toolbar class="mat-elevation-z8">
   <button mat-icon-button (click)="sidenav.toggle()">
-  
+
     <mat-icon > menu </mat-icon>
   </button>
   <h1>Go Adventure</h1>
 </mat-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav mode="side" open="true" #sidenav="matSidenav" class="mat-elevation-z8"> 
+  <mat-sidenav mode="side" open="true" #sidenav="matSidenav" class="mat-elevation-z8">
     <img
     class="avatar mat-elevation-z8"
     src="assets/GOAdvt.jpg"
-  />     
+  />
     <h2 class="name">GA</h2>
     <!-- <p class="designation"> Degree(B.Com)</p> -->
     <button  mat-button class="home-button" routerLinkActive="active">
@@ -22,45 +22,45 @@
     </button>
 
     <!-- <mat-divider></mat-divider>  -->
-    <mat-accordion> 
-      <mat-expansion-panel style="margin-top: 10px;" > 
-          <mat-expansion-panel-header> 
-          <mat-panel-title  class="Admin"> 
+    <mat-accordion>
+      <mat-expansion-panel style="margin-top: 10px;" >
+          <mat-expansion-panel-header>
+          <mat-panel-title  class="Admin">
               <mat-icon style="margin-right: 10px;" class="mat-icon">account_balance</mat-icon>
               Accounts
-          </mat-panel-title> 
-          </mat-expansion-panel-header> 
+          </mat-panel-title>
+          </mat-expansion-panel-header>
           <button  mat-button class="menu-button">
             <span><a routerLinkactive="active" routerLink="salaries">Salaries</a></span>
           </button>
 
           <div style="margin-top: 10px;" >
             <button style="color:crimson;" mat-button class="menu-button" routerLinkactive="active">
-              <span><a routerLink="office expenses" style="color:crimson">Office Expenses</a> </span>
+              <span><a routerLink="office expenses" style="color:crimson">OfficeExpenses</a> </span>
             </button>
       </div>
      <div style="margin-top: 10px;">
       <button style="color:crimson ;" mat-button class="menu-button" routerLinkactive="active">
-        <span><a routerLink="Products" style="color: crimson;">Products</a></span>
+        <span><a routerLink="AdvertisementBills" style="color: crimson;">AdvertisementBills</a></span>
 
       </button>
 
      </div>
 
-    
 
-          
-      
-      </mat-expansion-panel> 
-      
-      </mat-accordion> 
-    
-    
 
-     <mat-divider></mat-divider> 
 
-  
-  </mat-sidenav> 
+
+      </mat-expansion-panel>
+
+      </mat-accordion>
+
+
+
+     <mat-divider></mat-divider>
+
+
+  </mat-sidenav>
   <mat-sidenav-content>
     <div class="content mat-elevation-z8">
       <router-outlet></router-outlet>
