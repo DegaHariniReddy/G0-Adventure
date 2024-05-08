@@ -17,15 +17,18 @@ import { HomeComponent } from './home/home.component';
 import { MatCardModule } from '@angular/material/card';
 import { SalariesComponent } from './Accounts/salaries/salaries.component';
 import { OfficeExpensesComponent } from './Accounts/office-expenses/office-expenses.component';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatNativeDateModule} from '@angular/material/core';
-import {MatSelectModule} from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
 import { TripProfitnLosssComponent } from './Accounts/trip-profitn-losss/trip-profitn-losss.component';
 import { MaterialDesignModule } from './material-design/material-design.module';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { AdvertisementBillsComponent } from './Accounts/advertisement-bills/advertisement-bills.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TripBillsComponent } from './trip-bills/trip-bills.component';
+// import { MatDatepickerModule } from '@angular/material/datepicker';
+// import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -49,11 +52,13 @@ import { TripBillsComponent } from './trip-bills/trip-bills.component';
     MatSidenavModule,
     MatListModule,
     MatDividerModule,
-
+    MaterialDesignModule,
     MatExpansionModule,
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatDatepickerModule,
     MatNativeDateModule,
     MatSelectModule,
