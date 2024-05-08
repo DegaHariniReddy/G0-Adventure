@@ -26,7 +26,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { AdvertisementBillsComponent } from './Accounts/advertisement-bills/advertisement-bills.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TripBillsComponent } from './trip-bills/trip-bills.component';
+import { TripBillsComponent } from './Accounts/trip-bills/trip-bills.component';
 // import { MatDatepickerModule } from '@angular/material/datepicker';
 // import { MatNativeDateModule } from '@angular/material/core';
 

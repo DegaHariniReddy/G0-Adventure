@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <form>
+    <mat-card-content>
+      <header><b>Trip Bills</b></header>
+      <div class="container fluid">
+
+        <div class="col" align="center">
+          <mat-form-field appearance="outline">
+            <mat-label>Bill Id</mat-label>
+            <input matInput type="number" placeholder="Bill Id">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Transction Id</mat-label>
+            <input matInput type="text" placeholder="Transction Id">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Trip Id</mat-label>
+            <input matInput type="number" placeholder="Trip Id">
+          </mat-form-field>
+        </div>
+        <div class="col" align="center">
+
+          <mat-form-field appearance="outline">
+            <mat-label>Trip Name</mat-label>
+            <input matInput type="text" placeholder="Trip Name">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Mode</mat-label>
+            <mat-select #mode matNativeControl>
+              <mat-option value="">Select</mat-option>
+              <mat-option value="Abc">Add</mat-option>
+              <mat-option value="XYZS">Update</mat-option>
+              <mat-option value="ABCD">Delete</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Bill Amount</mat-label>
+            <input matInput type="number" placeholder="Bill Amount">
+          </mat-form-field>
+        </div>
+        <div class="col" align="center">
+
+          <mat-form-field appearance="outline">
+            <mat-label>Paid Amount </mat-label>
+            <input matInput type="number" placeholder="Paid Amount">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Due Amount</mat-label>
+            <input matInput type="text" placeholder="Due Amount">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>TotalAmount</mat-label>
+            <input matInput type="text" placeholder="Total Amount">
+          </mat-form-field>
+        </div>
+        <div class="col" align="center">
+
+          <mat-form-field appearance="outline">
+            <mat-label>Agent ID</mat-label>
+            <input matInput type="text" placeholder="Agent Id">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Agent Name</mat-label>
+            <input matInput type="text" placeholder="Agent Name">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Agent Type</mat-label>
+            <input matInput type="text" placeholder="Agent Type">
+          </mat-form-field>
+        </div>
+        <div class="col" align="center">
+
+          <mat-form-field appearance="outline" class="remarks">
+            <mat-label>Remarks</mat-label>
+            <textarea matInput placeholder="Remarks"></textarea>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="col" align="center">
+        <button mat-raised-button color="primary" type="submit"><mat-icon>save</mat-icon>Submit</button>
+        <button mat-raised-button color="accent" class="btnUpdate"><mat-icon>update</mat-icon>Update</button>
+        <button mat-raised-button color="warn" class="btnClear"><mat-icon>clear</mat-icon>Clear</button>
+        <button mat-raised-button color="warn" class="btnDelete"><mat-icon>delete</mat-icon>Delete</button>
+
+      </div>
+
+    </mat-card-content>
+  </form>
+</body>
+
+</html>
