@@ -1,8 +1,53 @@
+
+
+
 .form{
-  background-color: aliceblue;
+  background-color:white;
   height:100% ;
 }
 #header{
-  background-color: blanchedalmond;
+  /* background-color: */
+  background: linear-gradient(to bottom, #0826ce 0%, #707bf4 100%) ;
+  color:white;
 
+}
+mat-form-field {
+  gap: 1;
+  padding-right: 9px;
+  width: 40%;
+}
+.container {
+  padding-top: 2%;
+  /* align-self: center; */
+}
+mat-card-content {
+  padding-top: 10%;
+}
+/* #billid{
+ margin-right:200px ;
+ margin-left:120px ;
+} */
+#btnapply{
+  margin-left: 90px;
+}
+#btnreset{
+  margin-left:20px ;
+  color:white;
+}
+#btnclear{
+  background-color:red;
+  margin-left: 20px;
+  color:white;
+}
+#btnclose{
+  background-color:orangered;
+  margin-left: 20px;
+  color:white;
+}
+#btnget{
+margin-left:20px;
+background-color: green;
+}
+button{
+  border-radius:20px ;
 }
