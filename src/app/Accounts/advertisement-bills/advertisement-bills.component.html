@@ -1,45 +1,48 @@
-<form class="form" align="center">
-  <h1 id="header" align="margin-left:120px">Advertisement Bills</h1>
-  <div>
-    <mat-form-field appearance="outline" style="margin-left: 120px;">
-      <mat-label>Mode</mat-label>
-      <mat-select #mode value="select" formControlName="Mode">
-          <mat-option value="Select">Select</mat-option>
-        <mat-option value="Add">Add</mat-option>
-        <mat-option value="Update">Update</mat-option>
-        <mat-option value="Delete">Delete</mat-option>
-        <mat-option value="View">View</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <mat-form-field appearance="outline" style="margin-left: 90px;">
+<form class="form" align="left">
+  <h2 id="header" align="margin-left">Advertisement Bills</h2>
+  <div class="container fluid">
+  <div class="col" align="center">
+    <mat-form-field appearance="outline">
       <mat-label>Transaction Id</mat-label>
-      <input id="transactionid" matInput placeholder="Transaction Id" formControlName="TransactionId">
+      <input id="transactionid" matInput placeholder="Transaction Id" >
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Adv Type</mat-label>
+    <mat-select id="AdvType" #mode value="select">
+        <mat-option value="Select">Select</mat-option>
+      <mat-option value="Facebook">Facebook</mat-option>
+      <mat-option value="Instagram">Instagram</mat-option>
+    </mat-select>
   </mat-form-field>
   </div>
-  <div>
-    <mat-form-field appearance="outline" style="margin-left: 120px;">
-      <mat-label>Advertisement Type</mat-label>
-      <mat-select #mode value="select"  formControlName="AdvertisementType">
-          <mat-option value="Select">Select</mat-option>
-        <mat-option value="Facebook">Facebook</mat-option>
-        <mat-option value="Instagram">Instagram</mat-option>
-      </mat-select>
-    </mat-form-field>
-    <mat-form-field appearance="outline" style="margin-left: 90px;">
-      <mat-label>AdvertisementBill Id</mat-label>
-      <input id="billid" matInput placeholder="AdvertisementBill Id" formControlName="AdvBillId">
+  <div class="col" align="center">
+    <mat-form-field appearance="outline">
+      <mat-label>AdvBill Id</mat-label>
+      <input id="billid" matInput placeholder="AdvBill Id">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>AdvBill Date</mat-label>
+    <input id="billdate" matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
   </mat-form-field>
   </div>
-  <div>
-    <mat-form-field appearance="outline" style="margin-left: 90px;">
-      <mat-label>AdvertisementBill Date</mat-label>
-      <input matInput [matDatepicker]="picker" formControlName="AdvBill_Date">
-      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-      <mat-datepicker #picker></mat-datepicker>
-    </mat-form-field>
-    <mat-form-field appearance="outline" style="margin-left: 90px;">
-      <mat-label>AdvertisementBill Amount</mat-label>
-      <input id="billAmount" matInput placeholder="AdvertisementBill Amount" formControlName="AdvBill_Amount">
+<div class="col" align="center">
+    <mat-form-field appearance="outline">
+      <mat-label>AdvBill Amount</mat-label>
+      <input id="billamount" matInput placeholder="AdvBill Amount">
   </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Remarks</mat-label>
+    <input id="Remarks" matInput placeholder="Remarks">
+</mat-form-field>
+</div>
+  </div>
+  <div class="col" align="center" >
+    <button id="btnapply" mat-raised-button color="primary" ><mat-icon>save</mat-icon>Apply</button>
+     <button id="btnget"  mat-raised-button color="accent"><mat-icon>cached</mat-icon>Get</button>
+    <button id="btnreset"  mat-raised-button color="accent"><mat-icon>cached</mat-icon>Update</button>
+    <button id="btnclear" mat-raised-button color="red"><mat-icon>delete</mat-icon>Delete</button>
+    <button id="btnclose" mat-raised-button color="red"><mat-icon>clear_all</mat-icon>Clear</button>
   </div>
 </form>
