@@ -5,7 +5,9 @@ import { HomeComponent } from './home/home.component';
 import { SalariesComponent } from './Accounts/salaries/salaries.component';
 import { OfficeExpensesComponent } from './Accounts/office-expenses/office-expenses.component';
 import { TripProfitnLosssComponent } from './Accounts/trip-profitn-losss/trip-profitn-losss.component';
+import { TripBillsComponent } from './Accounts/trip-bills/trip-bills.component';
 // import { SalariesComponent } from './salaries/salaries.component';
+
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -19,6 +21,7 @@ const routes: Routes = [
   { path: 'tripPL', component: TripProfitnLosssComponent },
   { path: 'salaries', component: SalariesComponent },
   { path: 'office expenses', component: OfficeExpensesComponent },
+  { path: 'tripBills', component: TripBillsComponent },
 
 
 ];
