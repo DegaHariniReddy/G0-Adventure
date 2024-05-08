@@ -1,7 +1,9 @@
-<form align="center">
+<form align="center" id="form">
     <div class="container">
     <div class="col">
-
+        <!-- <h1 id="h1">Salaries
+            <button  mat-raised-button color="accent" id="Salaries">Salaries</button>
+            </h1> -->
         <mat-form-field appearance="outline">
             <mat-label>Employee Id</mat-label>
             <input matInput formControlName="EmpId" type="text" placeholder="EmpId">
@@ -64,21 +66,21 @@
 </mat-form-field>
     </div>
     <div>
-        <button style="margin-left: 20px;" mat-raised-button color="accent" id="submit">Submit
+        <button  mat-raised-button color="accent" type="submit">Submit
             <mat-icon>assignment_turned_in</mat-icon>
         </button>
-        <button style="margin-left: 20px;" mat-raised-button color="warn" 
-            type="button">Delete
-            <mat-icon>close</mat-icon>
+        <button  mat-raised-button color="warn" class="btnDelete" type="button">
+            <mat-icon>close</mat-icon>Delete
         </button>
-        <button style="margin-left: 20px;" mat-raised-button color="warn" 
+        <!-- <button mat-raised-button color="warn" type="submit" class="delete"><mat-icon>close</mat-icon>Delete</button> -->
+        <button  mat-raised-button color="warn" class="btnClear"
             type="button">Clear
             <mat-icon> notes</mat-icon>
         </button>
-        <button style="margin-left: 20px;" mat-raised-button color="primary" id="update"
+        <button  mat-raised-button color="primary" id="update"
             type="button">Update
             <mat-icon>update</mat-icon></button>
-            <button style="margin-left: 20px;" mat-raised-button color="primary" class="btnGet"
+            <button mat-raised-button color="primary" class="btnGet"
             type="button"> Get
             <mat-icon>get_app</mat-icon></button>
 
