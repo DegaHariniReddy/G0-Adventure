@@ -15,7 +15,7 @@ export class TripProfitnLosssComponent {
     this.tripPLform = this.fb.group({
       tripId: [''],
       tripName: ['', Validators.required],
-      tripDate: ['', Validators.required],
+      tripDate: [new Date(), Validators.required],
       quatedAmt: ['', Validators.required],
       tripLead: ['', Validators.required],
       leadCharges: ['', Validators.required],
