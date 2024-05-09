@@ -24,9 +24,14 @@ mat-card-content {
   padding-top: 10%;
 }
 /* #billid{
- margin-right:200px ;
- margin-left:120px ;
+ margin-right:350px ;
+
 } */
+.remarks{
+    width: 80%;
+    height: -20px;
+
+}
 #btnapply{
   margin-left: 90px;
 }
@@ -45,7 +50,8 @@ mat-card-content {
   color:white;
 }
 #btnget{
-margin-left:20px;
+margin-left: 20px;
+/* margin-right: 150px; */
 background-color: green;
 }
 button{
