@@ -30,6 +30,7 @@ import { TripBillsComponent } from './Accounts/trip-bills/trip-bills.component';
 // import { MatDatepickerModule } from '@angular/material/datepicker';
 // import { MatNativeDateModule } from '@angular/material/core';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,6 +63,8 @@ import { TripBillsComponent } from './Accounts/trip-bills/trip-bills.component';
     MatDatepickerModule,
     MatNativeDateModule,
     MatSelectModule,
+    FormsModule,
+    ReactiveFormsModule
 
 
   ],
