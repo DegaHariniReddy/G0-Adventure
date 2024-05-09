@@ -20,6 +20,8 @@
   }
   .heading{
     background-color:rgb(251, 219, 177);
+    text-align: left;
+    
   }
   #delete{
     background-color: rgb(184, 109, 238);
